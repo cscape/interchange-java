@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>TheTransitClock</groupId>
@@ -14,25 +14,26 @@
     <module>transitclockQuickStart</module>
     <module>transitclockTraccarClient</module>
     <module>transitclockBarefootClient</module>
+    <module>WaylineInterchange</module>
   </modules>
-    <profiles>
-        <profile>
-            <id>skip-integration-tests</id>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
-        </profile>
-        <profile>
-            <id>include-integration-tests</id>
-            <modules>
-                <module>transitclockIntegration</module>
-                <module>transitclock</module>
-                <module>transitclockApi</module>
-              	<module>transitclockWebapp</module>
-		 		<module>transitclockQuickStart</module>
-		 		<module>transitclockTraccarClient</module>
-		 		<module>transitclockBarefootClient</module>
-            </modules>
-        </profile>
-    </profiles>
+  <profiles>
+    <profile>
+      <id>skip-integration-tests</id>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
+    </profile>
+    <profile>
+      <id>include-integration-tests</id>
+      <modules>
+        <module>transitclockIntegration</module>
+        <module>transitclock</module>
+        <module>transitclockApi</module>
+        <module>transitclockWebapp</module>
+        <module>transitclockQuickStart</module>
+        <module>transitclockTraccarClient</module>
+        <module>transitclockBarefootClient</module>
+      </modules>
+    </profile>
+  </profiles>
 </project>
