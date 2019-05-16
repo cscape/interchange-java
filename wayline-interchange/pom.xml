@@ -13,6 +13,11 @@
 	</properties>
 	<dependencies>
 		<dependency>
+			<groupId>com.github.arteam</groupId>
+			<artifactId>simple-json-rpc-server</artifactId>
+			<version>0.10</version>
+		</dependency>
+		<dependency>
 			<groupId>org.eclipse.jetty</groupId>
 			<artifactId>jetty-servlet</artifactId>
 			<version>${jettyVersion}</version>
@@ -42,11 +47,6 @@
 			<artifactId>apache-jstl</artifactId>
 			<version>${jettyVersion}</version>
 		</dependency>
-		<!--<dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>jstl</artifactId>
-			<version>1.2</version>
-		</dependency>-->
 		<dependency>
 			<groupId>TheTransitClock</groupId>
 			<artifactId>transitclockCore</artifactId>
